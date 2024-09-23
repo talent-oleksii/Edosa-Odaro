@@ -1,15 +1,15 @@
 import { FC, useEffect } from 'react';
-import LOGO from '../images/logo.png';
-
-
+import Header from './Header';
+import MainComponent from './homepage/MainComponent';
+import FlowingBar from './homepage/FlowingBar';
 const Dashboard: FC = () => {
 
   return (
-    <header>
-        <div>
-            <img src={LOGO} />
-        </div>
-    </header>
+    <div>
+      <Header />
+      <MainComponent />
+      <FlowingBar />
+    </div>
   );
 };
 
