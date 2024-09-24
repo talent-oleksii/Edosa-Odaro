@@ -2,13 +2,15 @@ import { FC, useEffect } from 'react';
 import Header from './Header';
 import MainComponent from './homepage/MainComponent';
 import FlowingBar from './homepage/FlowingBar';
+import ValueDriven from './homepage/ValueDriven';
 const Dashboard: FC = () => {
 
   return (
-    <div>
+    <div className='mx-5'>
       <Header />
       <MainComponent />
       <FlowingBar />
+      <ValueDriven />
     </div>
   );
 };
