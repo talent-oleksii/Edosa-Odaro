@@ -8,8 +8,8 @@ const drivenItems = [
 		header: "Tailored Educational Paths",
 		content: "Access structured courses, coaching, and<br/> bundles tailored to different levels, helping<br/> professionals advance their data and AI skills.",
 		cardColor: "#F3F8FE",
-		imgUrl: "",
-		linkUrl: "",
+		imgUrl: "url(/assets/images/drivenSvgs/card1.svg)",
+		linkUrl: "/assets/images/drivenSvgs/arrow1.svg",
 	},
 	{
 		buttonName: "Read",
@@ -17,8 +17,26 @@ const drivenItems = [
 		header: "Insightful Readings",
 		content: "Discover a library of articles and books that<br/> provide strategic insights into how data and AI<br/> can create real-world value.",
 		cardColor: "#FFF7F4",
-		imgUrl: "",
-		linkUrl: "",
+		imgUrl: "url(/assets/images/drivenSvgs/card2.svg)",
+		linkUrl: "/assets/images/drivenSvgs/arrow2.svg",
+	},
+	{
+		buttonName: "Watch",
+		buttonColor: "#9E77ED",
+		header: "Engaging Multimedia Content",
+		content: "Watch videos and podcasts featuring Edosa<br/> and industry experts, offering valuable<br/> perspectives on data and AI's power.",
+		cardColor: "#F7F6FF",
+		imgUrl: "url(/assets/images/drivenSvgs/card3.svg)",
+		linkUrl: "/assets/images/drivenSvgs/arrow3.svg",
+	},
+	{
+		buttonName: "Meet",
+		buttonColor: "#95DB79",
+		header: "  ",
+		content: "Sign up for one-on-one coaching sessions with<br/> Edosa or get corporate advisory services that<br/> help organizations integrate data strategies<br/> effectively.",
+		cardColor: "#F2FAEC",
+		imgUrl: "url(/assets/images/drivenSvgs/card4.svg)",
+		linkUrl: "/assets/images/drivenSvgs/arrow4.svg",
 	},
 ];
 
@@ -34,7 +52,7 @@ const ValueDriven: FC = () => {
 			<div className="text-2xl leading-8 mt-8 text-text-color">
 				Explore our comprehensive offerings designed to support your growth in data value and AI through learning,<br /> reading, watching, and personal coaching.
 			</div>
-			<div className="col-span-2 flex gap-10 mt-6">
+			<div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-6">
 				{
 					drivenItems.map((item, index) => (
 						<DrivenCard
@@ -44,6 +62,8 @@ const ValueDriven: FC = () => {
 							cardColor={item.cardColor}
 							buttonName={item.buttonName}
 							buttonColor={item.buttonColor}
+							imgUrl={item.imgUrl}
+							linkUrl={item.linkUrl}
 						/>
 					))
 				}
