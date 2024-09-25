@@ -29,10 +29,10 @@ const responsive = {
 const FlowingBar: FC = () => {
     const items = [ITEM1, ITEM2, ITEM3, ITEM4, ITEM5];
     return (
-        <Carousel responsive={responsive} autoPlay arrows={false} className='mt-7' itemClass="px-5">
+        <Carousel responsive={responsive} autoPlay arrows={false} className='mt-4 sm:mt-7' itemClass="px-2 sm:px-5">
             {items.map((item, index) => (
-                <div key={index} className={`card rounded-md shadow-md gap-3 bg-def-color flex h-[205px] items-center justify-center`}>
-                    <img src={item} />
+                <div key={index} className={`card rounded-md shadow-md gap-3 bg-def-color flex h-[100px] sm:h-[205px] items-center justify-center`}>
+                    <img src={item} className='h-[50px] sm:h-[120px] w-auto' />
                 </div>
             ))}
         </Carousel>

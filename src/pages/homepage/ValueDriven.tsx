@@ -42,17 +42,17 @@ const drivenItems = [
 
 const ValueDriven: FC = () => {
 	return (
-		<div className="mt-14 px-10">
+		<div className="mt-4 sm:mt-14 px-4 sm:px-10">
 			<div>
-				<span className="text-2xl leading-8 font-bold rounded-full bg-[#F5F5F5] px-5 py-1">Value-Driven</span>
+				<span className="text-base sm:text-2xl leading-8 font-bold rounded-full bg-[#F5F5F5] px-3 sm:px-5 py-1">Value-Driven</span>
 			</div>
-			<div className="text-5xl leading-15 font-bold mt-8 text-text-color">
+			<div className="text-lg sm:text-5xl leading-15 font-bold mt-4 sm:mt-8 text-text-color">
 				Unlock Value with Edosa’s Offerings
 			</div>
-			<div className="text-2xl leading-8 mt-8 text-text-color">
-				Explore our comprehensive offerings designed to support your growth in data value and AI through learning,<br /> reading, watching, and personal coaching.
+			<div className="text-base sm:text-2xl leading-6 sm:leading-8 mt-2 sm:mt-8 text-text-color">
+				Explore our comprehensive offerings designed to support your growth in data value and AI through learning, reading, watching, and personal coaching.
 			</div>
-			<div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-6">
+			<div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-10 mt-6">
 				{
 					drivenItems.map((item, index) => (
 						<DrivenCard

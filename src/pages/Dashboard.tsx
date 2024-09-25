@@ -6,7 +6,7 @@ import ValueDriven from './homepage/ValueDriven';
 const Dashboard: FC = () => {
 
   return (
-    <div className='mx-5'>
+    <div className='mx-5 pb-5'>
       <Header />
       <MainComponent />
       <FlowingBar />
