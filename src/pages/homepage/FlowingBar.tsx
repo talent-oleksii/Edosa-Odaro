@@ -32,7 +32,7 @@ const FlowingBar: FC = () => {
         <Carousel responsive={responsive} autoPlay arrows={false} className='mt-4 sm:mt-7' itemClass="px-2 sm:px-5">
             {items.map((item, index) => (
                 <div key={index} className={`card rounded-md shadow-md gap-3 bg-def-color flex h-[100px] sm:h-[205px] items-center justify-center`}>
-                    <img src={item} className='h-[50px] sm:h-[120px] w-auto' />
+                    <img src={item} className='h-[50px] sm:h-[120px] w-auto' draggable="false" />
                 </div>
             ))}
         </Carousel>
