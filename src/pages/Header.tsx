@@ -29,7 +29,7 @@ const Header: FC = () => {
         <img src={LOGO} className='h-[96px] ml-[85px]' />
       </div>
 
-      <div className="panel border-2 border-text-color rounded-full bg-white py-0.5 sm:py-3 px-4 sm:px-8 flex items-center justify-center gap-5 sm:gap-10 ">
+      <div className="panel border-2 border-text-color rounded-full bg-white py-1 sm:py-3 px-4 sm:px-8 flex items-center justify-center gap-5 sm:gap-10 ">
         {links.map((item, index) => (
           <p key={index} className="text-xs sm:text-[20px] font-[Inter] font-normal">
             {item.text}

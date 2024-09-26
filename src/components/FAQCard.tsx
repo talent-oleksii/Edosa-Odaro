@@ -1,5 +1,6 @@
 import React from "react";
 import "../assets/css/FAQ.css";
+import { FiPlus } from "react-icons/fi";
 
 // Define the type for FAQ item
 interface FAQItem {
@@ -22,8 +23,8 @@ const FAQ: React.FC<FAQProps> = ({ faq, index, toggleFAQ }) => {
       key={index}
       onClick={() => toggleFAQ(index)}
     >
-      <div className="faq-question">{faq.question}</div>
-      <div className="faq-answer">{faq.answer}</div>
+      <div className="faq-question text-text-color">{faq.question}</div>
+      <div className="faq-answer text-text-color">{faq.answer}</div>
     </div>
   );
 };

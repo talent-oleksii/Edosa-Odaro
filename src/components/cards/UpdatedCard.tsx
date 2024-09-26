@@ -21,7 +21,7 @@ const DrivenCard: FC<DrivenCardProps> = ({
             <div className="mx-4 sm:mx-5 mt-4 sm:mt-5">
                 <img src={imgUrl} className="w-full" />
             </div>
-            <span style={{ color: typeColor }} className={`text-sm mt-2 sm:mt-2 sm:ml-5 max-w-24`}>{typeName}</span>
+            <span style={{ color: typeColor }} className={`text-sm mt-2 ml-5 max-w-24`}>{typeName}</span>
 
             <div className="leading-4 sm:leading-8 text-base sm:text-3xl font-bold  sm:mx-5 flex mx-4">
                 {header}

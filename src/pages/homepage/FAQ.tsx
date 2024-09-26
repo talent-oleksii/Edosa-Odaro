@@ -11,22 +11,34 @@ interface FAQItem {
 const FAQ: FC = () => {
   const [faqs, setFaqs] = useState<FAQItem[]>([
     {
-      question: "How many programmers does it take to screw a lightbulb?",
+      question: "What kinds of learning resources are available?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra lorem eu dolor rhoncus, at scelerisque ligula gravida. Sed porta id mi sit amet convallis. Etiam iaculis massa sit amet lacus blandit sodales. Nulla ultrices velit a diam placerat congue. Pellentesque iaculis, ipsum quis eleifend dapibus, est dui eleifend ante, quis fermentum mi ligula quis nisl. Ut et ex dui. Integer id venenatis quam.",
+        "We offer a variety of resources including structured courses, curated content bundles, coaching sessions, and books. These resources are designed to cater to different levels, from beginners to advanced professionals.",
       open: true
     },
     {
-      question: "Who is the most awesome person?",
-      answer: "You! The viewer!",
+      question: "How can I access coaching or consulting services?",
+      answer: "This many!",
       open: false
     },
     {
       question:
-        "How many questions does it take to makes a succesful FAQ Page?",
+        "How can I stay updated with new content?",
       answer: "This many!",
       open: false
-    }
+    },
+    {
+      question:
+        " Are there resources available for leaders and executives?",
+      answer: "This many!",
+      open: false
+    },
+    {
+      question:
+        "How can I connect directly with Edosa?",
+      answer: "This many!",
+      open: false
+    },
   ]);
   const toggleFAQ = (index: number): void => {
     setFaqs(
@@ -43,7 +55,7 @@ const FAQ: FC = () => {
   };
 
   return (
-    <div className="mt-4 sm:mt-14 px-4 sm:px-10 flex justify-center items-center flex-col">
+    <div className="mt-4 sm:mt-14 sm:px-10 flex justify-center items-center flex-col">
       <div>
         <span className="text-base sm:text-2xl leading-8 font-bold rounded-full bg-[#F5F5F5] px-3 sm:px-5 py-1">FAQ</span>
       </div>
